@@ -222,7 +222,7 @@ textarea:hover {
   outline:none;
   cursor: pointer;
 
-  border: solid 1px #black;
+  border: solid 1px black;
   border-top: none;
 }
 
