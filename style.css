@@ -47,7 +47,7 @@ p {
     color: white; }
 
   .fa-github {
-    background: #24A159; 
+    background: #24A159;
     color: #fff; }
 
   .fa {
@@ -252,7 +252,10 @@ textarea:hover {
 {
   #wrapper
   {
-    width: 90%;
+    width: 100%;
     display: flex;
+    position: relative;
+    float: none;
   }
+
 }
