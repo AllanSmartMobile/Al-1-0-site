@@ -18,7 +18,7 @@ h1 {
 h2 {
   font-family: 'Inter', sans-serif;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 34px;
   text-align: left;
   padding-left: 5%;
   padding-right: 5%;
@@ -42,9 +42,13 @@ p {
   text-align: left;
 }
 
-	.fa-linkedin {
-    background: #b3aca7;
+	.fa-twitter {
+    background: #1E90FF;
     color: white; }
+
+  .fa-github {
+    background: #24A159; 
+    color: #fff; }
 
   .fa {
     padding: 10px;
@@ -62,39 +66,47 @@ p {
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #aca49c;
+  color: #BF6EE0;
   font-size: 0.875em;
+  font-weight: bold;
 }
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
+  color: #BF6EE0;
+  font-weight: bold;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #aca49c;
+  color: #BF6EE0;
   font-size: 0.875em;
+  font-weight: bold;
 }
 
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #bbb5af;
+  color: #BF6EE0;
+  font-weight: bold;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #aca49c;
+  color: #BF6EE0;
   font-size: 0.875em;
+  font-weight: bold;
 }
 
 input:focus::placeholder, textarea::focus:placeholder {
-  color: #bbb5af;
+  color: #BF6EE0;
+  font-weight: bold;
 }
 
 input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #aca49c;
+  color: #BF6EE0;
   font-size: 0.875em;
+  font-weight: bold;
 }
 
 input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #bbb5af;
+  color: #BF6EE0;
+  font-weight: bold;
 }
 
 /* on hover placeholder */
@@ -102,19 +114,22 @@ input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
 input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
   color: black;
   font-size: 0.875em;
+  font-weight: bold;
 }
 
 input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
+  color: black;
 }
 
 input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
   color: black;
   font-size: 0.875em;
+  font-weight: bold;
 }
 
 input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
+  color: black;
+  font-weight: bold;
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
@@ -123,7 +138,8 @@ input:hover::placeholder, textarea:hover::placeholder {
 }
 
 input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #cbc6c1;
+  color: black;
+  font-weight: bold;
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
@@ -132,13 +148,15 @@ input:hover::placeholder, textarea:hover::placeholder {
 }
 
 input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
+  color: black;
+  font-weight: bold;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   background: #fff;
   color: black;
+  font-weight: bold;
 }
 
 header {
@@ -176,8 +194,9 @@ input {
 }
 
 input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  background: #24A159;
+  color: black;
+  font-weight: bold;
 }
 
 textarea {
@@ -203,8 +222,8 @@ textarea {
 }
 
 textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  background: #24A159;
+  color: black;
 }
 
 #submit {
@@ -215,6 +234,7 @@ textarea:hover {
 
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
+  font-weight: bold;
   color: black;
 
   outline:none;
@@ -225,14 +245,14 @@ textarea:hover {
 }
 
 #submit:hover {
-  color: #e2dedb;
+  color: black;
 }
 
 @media only screen and (min-width:700px) and (max-width:995px)
 {
   #wrapper
   {
-    width:100%;
+    width: 90%;
     display: flex;
   }
 }
