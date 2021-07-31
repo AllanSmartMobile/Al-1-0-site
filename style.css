@@ -169,14 +169,14 @@ header {
 
 #form {
   position: relative;
-  width: 500px;
+  width: 400px;
   margin: 50px auto 100px auto;
 }
 
 input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 470px;
+  width: 370px;
   height: 50px;
   padding: 0px 15px 0px 15px;
 
@@ -200,8 +200,8 @@ input:hover {
 }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
+  width: 370px;
+  max-width: 400px;
   height: 110px;
   max-height: 110px;
   padding: 15px;
@@ -227,7 +227,7 @@ textarea:hover {
 }
 
 #submit {
-  width: 502px;
+  width: 402px;
 
   padding: 0;
   margin: -5px 0px 0px 0px;
