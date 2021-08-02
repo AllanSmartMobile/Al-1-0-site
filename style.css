@@ -146,12 +146,6 @@ ul {
   object-fit: cover;
 }
 
-@media (max-width: 30.625em) {
-  .image {
-    max-width: 90%;
-    height: auto;
-  }
-}
 /* Socials */
 
 .fa-twitter {
