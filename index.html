@@ -1,94 +1,363 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link href="style.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@charset "UTF-8";
 
-<title>Al-1-0</title>
-</head>
+/* Custom properties/variables  */
+:root {
+  /* --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841; */
+}
+body {
+  background-color: #ffe;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  color: red;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-<body>
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bolder;
+  font-size: 34px;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 120px;
+}
 
-<nav id="navbar" class="nav">
-  <ul class="nav-list">
-    <li>
-      <a href="#services">Services</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
-<h1>
-  Al-1-0
-</h1>
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10px;
+}
 
-<div class="container">
-<img class="img-1" src="img/undraw_static_website_0107.svg" onerror="this.onerror=null; this.src='img/undraw_static_website_0107.png'">
-</div>
+.h3-red {
+  font-family: 'Inter', sans-serif;
+  color: red;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10px;
+}
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
 
-<h2>
-  I am an Indie Developer of Websites, Archives & Digital Projects
-</h2>
-<aside>
-  <section id="services">
-<h3 class="h3-red">
-  Services
-</h3>
-<p>I offer independent and affordable website development, design, consulting, and deployment services.
-<p>i am enthusiastic and passionate about good design principles and I'm here to talk you through SEO, online payment systems, and managing data.</p>
-<p>I am comfortable and experienced with the following languages and content management systems:</p></br>
-<aside>
-<p>
-  <strong><a href="https://www.w3schools.com/whatis/whatis_html.asp" target="_blank">HTML</a></strong></br>
-  <strong><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">CSS</a></strong></br>
-  <strong><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">JavaScript</a></strong></br>
-  <strong><a href="https://www.w3schools.com/whatis/whatis_react.asp" target="_blank">React</a></strong></br>
-  <strong><a href="https://kinsta.com/knowledgebase/what-is-wordpress/" target="_blank">WordPress</a></strong></br>
-  <strong><a href="https://indexhibit.org/what-who-why-how/" target="_blank">Indexhibit</a></strong></br>
-  <strong><a href="https://www.sanity.io/blog/headless-cms-explained" target="_blank">Sanity</a></strong></br>
-  <strong><a href="https://www.squarespace.com/" target="_blank">SquareSpace</a></strong></br></br>
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--main-white);
+}
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
 
-</p>
-<p>I am passionate about offering web and digital services for small-to-medium projects ranging from startups to art organisations through to bars, restaurants, and independent stores.</p>
-</section>
-<div class="container">
-  <img class="img-2" src="img/undraw_cms_re_asu0.svg" onerror="this.onerror=null; this.src='img/undraw_cms_re_asu0.png'">
-</div>
-<h3>
-  View my last project <strong><a href="https://neon-archive.com" target="_blank">here</a></strong></br></br>
-</h3>
+a:hover {
+  text-decoration: none;
+  color: #06e;
+}
 
-<section id="contact">
-<p>
-  If you want to contact me or discuss how I can help you with your beautiful project </br>
-  fill in the form below..
-</p>
+ul {
+  list-style: none;
+}
 
-<!-- Contact Form  -->
+/* Navigation */
 
-<div id="wrapper">
-<form name="contactMe" id="form" class="topBefore" method="POST" data-netlify="true">
-		  <input name="name" id="name" type="text" placeholder="ID?">
-		  <input name="email" id="email" type="email" placeholder="Mail?">
-		  <textarea name="message" id="message" type="text" placeholder="Talk to Me"></textarea>
-  <input id="submit" type="submit" value="GO!">
-</form>
-</div>
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  z-index: 10;
+}
 
-</section>
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
 
-<p>If you would like to connect with me you can reach me on
-  <a href="https://twitter.com/RWMmusic" target="_blank"><i class="fa fa-twitter"></i></a>
-</p>
-<p>Eat my code @ <a href="https://github.com/Al-1-0/Al-1-0-site" target="_blank"><i class="fa fa-github"></i></a>
+@media (max-width: 28.75em) {
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: var(--main-blue);
+}
+
+/* Socials */
+
+	.fa-twitter {
+    background: #ffe;
+    color: #000; }
+
+  .fa-github {
+    background: #ffe;
+    color: #000; }
+
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    max-height: 70%;
+    text-align: center;
+    text-decoration:
+    none; border-radius: 15%;
+    align-items: center;
+    justify-content: center; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img-1 {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-2 {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Contact form style */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #BF6EE0;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #BF6EE0;
+  font-weight: bold;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #BF6EE0;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #BF6EE0;
+  font-weight: bold;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #BF6EE0;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #BF6EE0;
+  font-weight: bold;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #BF6EE0;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #BF6EE0;
+  font-weight: bold;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: black;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: black;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+  color: black;
+  /* font-weight: bold; */
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
 
 
-</body>
-</html>
+
+#form {
+  position: relative;
+  width: 400px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 370px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: black;
+
+  border: solid 1px black;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #24A159;
+  color: black;
+  font-weight: bold;
+}
+
+textarea {
+  width: 370px;
+  max-width: 400px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+
+  border: solid 1px black;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #24A159;
+  color: black;
+}
+
+#submit {
+  width: 402px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  color: black;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px black;
+  border-top: none;
+}
+
+#submit:hover {
+  color: black;
+}
+
+@media only screen and (min-width:700px) and (max-width:995px)
+{
+  #wrapper
+  {
+    width: 100%;
+    display: flex;
+    position: relative;
+    float: none;
+  }
+
+}
