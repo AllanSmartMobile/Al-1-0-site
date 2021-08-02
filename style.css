@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-/* Custom properties/variables  */
-:root {
-  /* --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841; */
-}
 body {
   background-color: #ffe;
 }
@@ -103,13 +96,12 @@ ul {
 }
 
 @media (max-width: 28.75em) {
-  .nav {
-    display: flex;
-    justify-content: flex-end;
+.nav {
+  display: flex;
+  justify-content: flex-end;
   }
-
-  .nav-list {
-    margin: 0 1rem;
+.nav-list {
+  margin: 0 1rem;
   }
 }
 
@@ -123,26 +115,58 @@ ul {
   background: var(--main-blue);
 }
 
+/* Image Grid  */
+
+/* image grid using no media queries */
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+
+.img-section {
+  padding-left: 10%;
+  }
+
+.img-grid {
+  grid-template-columns: 1fr;
+  }
+}
+
+.image {
+  height: auto;
+  width: 400px;
+  object-fit: cover;
+
+}
+
 /* Socials */
 
-	.fa-twitter {
-    background: #ffe;
-    color: #000; }
+.fa-twitter {
+  background: #ffe;
+  color: #000; }
 
-  .fa-github {
-    background: #ffe;
-    color: #000; }
+.fa-github {
+  background: #ffe;
+  color: #000; }
 
-  .fa {
-    padding: 5px;
-    font-size: 20px;
-    width: 20px;
-    max-height: 70%;
-    text-align: center;
-    text-decoration:
-    none; border-radius: 15%;
-    align-items: center;
-    justify-content: center; }
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 20px;
+  max-height: 70%;
+  text-align: center;
+  text-decoration:
+  none; border-radius: 15%;
+  align-items: center;
+  justify-content: center;
+  }
 
 .container {
   display: flex;
@@ -150,18 +174,19 @@ ul {
   flex-wrap: wrap;
 }
 .img-1 {
-  width: 500px;
+  width: 400px;
+  padding-left: 10%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .img-2 {
-  width: 500px;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Contact form style */
+/* Contact form styles */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
@@ -352,12 +377,11 @@ textarea:hover {
 
 @media only screen and (min-width:700px) and (max-width:995px)
 {
-  #wrapper
-  {
-    width: 100%;
-    display: flex;
-    position: relative;
-    float: none;
+#wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  float: none;
   }
 
 }
