@@ -131,8 +131,7 @@ ul {
 @media (max-width: 30.625em) {
 
 .img-section {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
   }
 
 .img-grid {
@@ -144,6 +143,7 @@ ul {
   height: auto;
   width: 400px;
   object-fit: cover;
+
 }
 
 /* Socials */
@@ -173,7 +173,18 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
 }
+.img-1 {
+  width: 400px;
+  padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.img-2 {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Contact form styles */
 
@@ -367,7 +378,7 @@ textarea:hover {
 @media only screen and (min-width:700px) and (max-width:995px)
 {
 #wrapper {
-  width: 90%;
+  width: 100%;
   display: flex;
   position: relative;
   float: none;
