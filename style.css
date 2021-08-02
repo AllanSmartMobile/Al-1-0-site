@@ -122,7 +122,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
-  width: 100%;
+  width: 90%;
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 6rem;
@@ -131,7 +131,8 @@ ul {
 @media (max-width: 30.625em) {
 
 .img-section {
-  padding-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   }
 
 .img-grid {
@@ -143,14 +144,12 @@ ul {
   height: auto;
   width: 400px;
   object-fit: cover;
-
 }
-@media only screen and (min-width:700px) and (max-width:995px) {
-  .image {
-    height: auto;
-    width: 300px;
-    object-fit: cover;
 
+@media (max-width: 30.625em) {
+  .image {
+    max-width: 90%;
+    height: auto;
   }
 }
 /* Socials */
@@ -180,18 +179,7 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
 }
-.img-1 {
-  width: 400px;
-  padding-left: 10%;
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.img-2 {
-  width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-}
 
 /* Contact form styles */
 
@@ -385,7 +373,7 @@ textarea:hover {
 @media only screen and (min-width:700px) and (max-width:995px)
 {
 #wrapper {
-  width: 100%;
+  width: 90%;
   display: flex;
   position: relative;
   float: none;
