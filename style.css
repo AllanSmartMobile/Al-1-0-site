@@ -78,6 +78,7 @@ ul {
 }
 
 .container {
+  display: flex;
   justify-content: center;
 }
 /* Navigation */
