@@ -174,8 +174,8 @@ ul {
   flex-wrap: wrap;
 }
 .img-1 {
-  width: 400px;
-  padding-left: 10%;
+  max-width: 400px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
