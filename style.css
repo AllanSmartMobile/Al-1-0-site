@@ -181,7 +181,8 @@ ul {
 }
 
 .img-2 {
-  width: 400px;
+  max-width: 400px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
