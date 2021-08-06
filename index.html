@@ -19,20 +19,27 @@
 
 <body>
 
-<nav id="navbar" class="nav">
-  <ul class="nav-list">
-    <li>
-      <a href="#about"><strong>About</strong></a>
-    </li>
-    <li>
-      <a href="#services"><strong>Services</strong></a>
-    </li>
-    <li>
-      <a href="#contact"><strong>Contact</strong></a>
-    </li>
-  </ul>
-</nav>
+<input id="burger" type="checkbox" style="display:  none" />
 
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+       <nav>
+        <ul>
+          <li>
+            <a href="#about"><strong>About</strong></a>
+          </li>
+          <li>
+            <a href="#services"><strong>Services</strong></a>
+          </li>
+          <li>
+            <a href="#contact"><strong>Contact</strong></a>
+          </li>
+        </ul>
+      </nav>
+ 
   <h1 class="animate__animated animate__fadeInRight">
     AL-1-0
   </h1>
@@ -126,6 +133,17 @@
   </div>
     <small className="website-rights">AL-1-0 © 2021 </small>
 </footer>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += "responsive";
+    } else {
+      x.className =  "topnav";
+    }
+  }
+</script>
 
 </body>
 </html>
